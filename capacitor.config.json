@@ -1,0 +1,16 @@
+{
+  "appId": "com.inkstall.inkmaic",
+  "appName": "Ink MAIC",
+  "webDir": "dist",
+  "server": {
+    "url": "http://localhost:3000",
+    "cleartext": false
+  },
+  "ios": {
+    "contentInset": "never",
+    "allowsLinkPreview": false,
+    "scrollEnabled": true,
+    "backgroundColor": "#eff6ff",
+    "preferredContentMode": "mobile"
+  }
+}
