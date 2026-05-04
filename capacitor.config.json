@@ -1,9 +1,9 @@
 {
-  "appId": "com.inkstall.inkmaic",
-  "appName": "Ink MAIC",
+  "appId": "com.inkstall.fourkal",
+  "appName": "4kal",
   "webDir": "dist",
   "server": {
-    "url": "http://localhost:3000",
+    "url": "https://4kal.com",
     "cleartext": false
   },
   "ios": {
