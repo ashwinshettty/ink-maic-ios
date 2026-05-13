@@ -3,7 +3,7 @@
   "appName": "4kal",
   "webDir": "dist",
   "server": {
-    "url": "https://4kal.com",
+    "url": "http://192.168.1.53:3000",
     "cleartext": false
   },
   "ios": {
