@@ -3,7 +3,7 @@
   "appName": "4kal",
   "webDir": "dist",
   "server": {
-    "url": "https://4kal.com",
+    "url": "https://www.4kal.com",
     "cleartext": false
   },
   "ios": {
@@ -21,7 +21,11 @@
       "showSpinner": false
     },
     "PushNotifications": {
-      "presentationOptions": ["badge", "sound", "alert"]
+      "presentationOptions": [
+        "badge",
+        "sound",
+        "alert"
+      ]
     }
   }
 }
