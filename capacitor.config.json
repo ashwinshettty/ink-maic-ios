@@ -3,8 +3,8 @@
   "appName": "4kal",
   "webDir": "dist",
   "server": {
-    "url": "https://www.4kal.com",
-    "cleartext": false
+    "url": "https://www.4kal.com/",
+    "cleartext": true
   },
   "ios": {
     "contentInset": "never",
