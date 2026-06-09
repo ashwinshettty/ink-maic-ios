@@ -3,14 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>Ink MAIC</title>
+  <title>4kal</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { height: 100%; width: 100%; }
-    body { overflow: hidden; }
+    html, body { height: 100%; width: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    body {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0b1020;
+      color: #fff;
+      text-align: center;
+      padding: 24px;
+    }
+    .wrap { max-width: 480px; }
+    .title { font-size: 28px; font-weight: 700; margin-bottom: 10px; }
+    .msg { color: #cbd5e1; font-size: 15px; line-height: 1.5; margin-bottom: 16px; }
+    .btn {
+      display: inline-block;
+      border: none;
+      border-radius: 999px;
+      padding: 12px 18px;
+      background: #e11d48;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
-  <p>Ink MAIC</p>
+  <div class="wrap">
+    <div class="title">4kal</div>
+    <div id="status" class="msg">Launching app…</div>
+    <a id="openLink" class="btn" href="https://www.4kal.com/" target="_blank" rel="noopener" style="display:none;">Open 4kal</a>
+  </div>
+  <script>
+    const URL = 'https://www.4kal.com/';
+    const statusEl = document.getElementById('status');
+    const openLink = document.getElementById('openLink');
+    const showFallback = () => {
+      statusEl.textContent = 'Unable to load content right now. Please check network and try again.';
+      openLink.style.display = 'inline-block';
+    };
+    setTimeout(showFallback, 8000);
+    try {
+      window.location.replace(URL);
+    } catch (e) {
+      showFallback();
+    }
+  </script>
 </body>
 </html>

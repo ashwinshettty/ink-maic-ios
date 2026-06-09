@@ -3,15 +3,18 @@
   "appName": "4kal",
   "webDir": "dist",
   "server": {
-    "url": "https://www.4kal.com/",
-    "cleartext": true
+    "url": "https://4kal.com/",
+    "cleartext": false,
+    "allowNavigation": [
+      "4kal.com",
+      "*.4kal.com"
+    ]
   },
   "ios": {
-    "contentInset": "never",
+    "contentInset": "automatic",
     "allowsLinkPreview": false,
     "scrollEnabled": true,
-    "backgroundColor": "#FFFFFF",
-    "preferredContentMode": "mobile"
+    "backgroundColor": "#FFFFFF"
   },
   "plugins": {
     "SplashScreen": {

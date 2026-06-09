@@ -4,7 +4,7 @@ Capacitor app for iOS that loads **https://dygno.com** and respects safe area (n
 
 ## Safe area
 
-- **iOS**: `contentInset: "automatic"` in `capacitor.config.json` makes the WebView content respect safe area insets. The loaded site (dygno.com) can use `viewport-fit=cover` and `env(safe-area-inset-top/right/bottom/left)` in CSS for full control.
+- **iOS**: `contentInset: "automatic"` in `capacitor.config.json` makes the WebView respect safe area insets on iPhone and iPad. The loaded site (4kal.com) uses `viewport-fit=cover` and `env(safe-area-inset-*)` in CSS for layout padding.
 
 ## Setup
 
